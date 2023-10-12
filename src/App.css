@@ -74,6 +74,7 @@ body {
   bottom: 100px;
   padding: 10px;
   background: #f9806d;
+  z-index: 3;
 }
 
 .canvas {
