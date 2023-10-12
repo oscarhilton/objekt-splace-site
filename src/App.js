@@ -39,7 +39,7 @@ const CanvasAnimation = () => {
     draw();
   }, [rowPositions, rows]);
 
-  return <canvas ref={canvas} width={400} height={380}></canvas>;
+  return <canvas className='canvas' ref={canvas} width={400} height={380}></canvas>;
 };
 
 function App() {
@@ -50,27 +50,11 @@ function App() {
         </nav>
       </header>
       <main>
-        <section style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '100vh',
-          backgroundColor: '#f9806d'
-        }}>
-          <img src="./OIG.png" alt="OIG" style={{
-            width: '450px',
-            height: '450px',
-            position: 'absolute',
-          }} />
-          <CanvasAnimation />
-          <h1 style={{
-            position: 'absolute',
-            fontSize: '1rem',
-            fontWeight: 'normal',
-            fontFamily: 'Fold Grotesque Pro',
-            bottom: '100px',
-          }}>hello@objektobjekt.com</h1>
-        </section>
+      <section className="section-container">
+        <img src="./OIG.png" alt="OIG" className="oig-image" />
+        <CanvasAnimation />
+        <h1 className="contact-text">hello@objektobjekt.com</h1>
+      </section>
       </main>
       <footer>
       </footer>

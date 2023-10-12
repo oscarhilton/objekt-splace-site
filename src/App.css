@@ -48,3 +48,34 @@ body {
   font-family: "Fold Grotesque Pro";
   color: white;
 }
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9806d;
+  padding: 1rem;
+}
+
+.oig-image {
+  max-width: 450px;
+  max-height: 450px;
+  position: absolute;
+  width: 100%;
+}
+
+.contact-text {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: 'Fold Grotesque Pro';
+  bottom: 100px;
+  padding: 10px;
+  background: #f9806d;
+}
+
+.canvas {
+  width: 100%;
+  max-width: 400px;
+}
