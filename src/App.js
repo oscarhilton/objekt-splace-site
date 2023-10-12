@@ -9,7 +9,7 @@ const CanvasAnimation = () => {
 
   useEffect(() => {
     const ctx = canvas.current.getContext('2d');
-    ctx.fillStyle = '#019fdaff';
+    ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
     ctx.font = '39px Fold Grotesque Pro';
 
@@ -55,11 +55,11 @@ function App() {
           justifyContent: 'center',
           alignItems: 'center',
           height: '100vh',
-          backgroundColor: '#fff'
+          backgroundColor: '#f9806d'
         }}>
           <img src="./OIG.png" alt="OIG" style={{
-            width: '400px',
-            height: '400px',
+            width: '450px',
+            height: '450px',
             position: 'absolute',
           }} />
           <CanvasAnimation />
